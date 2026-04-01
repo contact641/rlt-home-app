@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RLT Home App — Admin Panel</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f4f4f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 22px;
+    color: #18181b;
+    margin-bottom: 4px;
+  }
+  .header p {
+    font-size: 13px;
+    color: #71717a;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(220,38,38,0.1);
+    color: #dc2626;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  iframe {
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    background: #09090b;
+  }
+  .note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #a1a1aa;
+    text-align: center;
+    max-width: 400px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="badge">ADMIN</div>
+  <h1>RLT Home App — Admin Panel</h1>
+  <p>Configure app content, modes, branding, and features</p>
+</div>
+
+<iframe
+  id="app-frame"
+  src="RLT-Home-App.html#admin"
+  width="393"
+  height="852"
+  allow="clipboard-write">
+</iframe>
+
+<p class="note">
+  Changes made here affect the app prototype in real time.<br>
+  This admin panel is separate from the main app URL.
+</p>
+
+</body>
+</html>
